@@ -29,38 +29,68 @@ li a:hover {
 
 /* end nav bar */
 
-body {
+/* grid layout*/
 
+body{
 display: grid;
-width: auto;
-grid-template-columns: 
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header"
+"main main aside"
+"main main aside"
+"footer footer footer"
+
+
+
+
 }
 header {
   grid-area: header;
-
 }
 main {
-  grid-area: main;
-
+  grid-area:  main;
 }
+.main-paragraph {
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+}
+.jokes-paragraph {
+  font-size: 25px;
+}
+
+
 aside {
   grid-area: aside;
-
 }
 
-footer {
-  grid-area: footer;
-}
+
+
 
 
 
 footer {
-  text-align: center;
-  background-image: linear-gradient(#A3EDFF, #85DBFF, #4976CC);
-  padding-bottom: 50px;
-  border-style: solid;
-  border-width: 3px;
+grid-area: footer;
+padding:
 }
+.red {
+  background-color: red
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+
+/* end of grid layout */
+
+
+
 
 
 
@@ -69,7 +99,7 @@ footer {
 img {
   width: 300px;
   height: 300px;
-  margin-left: 200px;
+
   border-radius: 10px;
   border: solid;
   border-color: green;
@@ -78,9 +108,9 @@ img {
 
 }
 img.a {
-  width: 300px;
-  height: 300px;
-  margin-left: 300px;
+  width: 1fr;
+  height: 1fr;
+  margin: 10px 10px 10px 10px;
   border-radius: 10px;
   border: solid;
   border-color: green;
@@ -93,6 +123,12 @@ img.b {
   border-radius: 10px;
   border: solid;
   border-color: green;
+}
+
+img.c {
+  margin: 10px 10px 10px 10px;
+  width: 80%;
+  height: 80%;
 }
 
 
@@ -109,107 +145,20 @@ img.b {
 
   /* headings */
 
-h1 {
-  border-style: solid;
-  border-width: 3px;
-    text-align: center;
-    font-size: 60px;
-    border-radius: 10px;
-  margin: 8px 70px 2px 80px;
-  width: 1fr;
-  height: 1fr;
-  }
 
 
-h2 {
-  border-style: solid;
-  border-width: 3px;
-    text-align: center;
-      background-image: linear-gradient(#A3EDFF, #85DBFF, #4976CC);
 
-}
-h3 {
-  border-style: solid;
-  border-width: 3px;
-    text-align: center;
-      background-image: linear-gradient(#A3EDFF, #85DBFF, #4976CC);
-}
-
-.changeheadingcolor {
-  background-image: linear-gradient(#A3EDFF, #85DBFF, #4976CC);
-}
-.changeheadingcolor:hover {
-  background: linear-gradient(red, yellow, orange);
-  transition: 5s;
-}
 
   /* end of headings */
-p {
-  margin: 5px;
-  width: 55%;
-    padding: 10px;
-}
 
 
 
 
 
-article{
-
-  padding: 10px;
-  background-color: white;
-  border-style: solid;
-  border-width: 3px;
-  font-size: 25px;
-
-
-
-}
-
-
-/* These are indiviudal articles */
-article.a {
-  padding-bottom: 100px;
-}
-
-
-
-article.c {
-
-
-
-  padding-bottom: 150px;
-
-}
-
-article.d {
-  padding-bottom: 150px;
-}
 
 
 
 
-article.g {
-
-
- animation-duration: 4s
-
-}
-
-
-article.i {
-
-    text-align: center;
-    padding-bottom: 100px;
-}
-
-
-article.j {
-
-  text-align: center;
-
-  padding-bottom: 100px;
-}
 
 
 
