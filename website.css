@@ -146,7 +146,12 @@ img.c {
 
   /* headings */
 
+.heading-style {
+border-style: solid;
+border-color: white;
+background-image: linear-gradient(White,grey ,black);
 
+}
 
 
 
