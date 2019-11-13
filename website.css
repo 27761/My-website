@@ -50,6 +50,7 @@ header {
 }
 main {
   grid-area:  main;
+  
 }
 .main-paragraph {
   padding: 10px;
@@ -74,18 +75,18 @@ footer {
 grid-area: footer;
 padding:
 }
-.red {
-  background-color: red
+.footer-color {
+  background-color: #ccffff;
 }
 
-.green {
-  background-color: green;
+.aside-color {
+  background-color:  #d9d9d9;
 }
 
-.yellow {
-  background-color: yellow;
+.main-color {
+  background-color: #e6e6e6;
 }
-
+ 
 
 /* end of grid layout */
 
