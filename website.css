@@ -8,7 +8,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-    background-image: linear-gradient(#A3EDFF, #85DBFF, #4976CC);
+    background-image: linear-gradient(#dddd88, yellow, white);
 }
 
 li {
@@ -30,27 +30,50 @@ li a:hover {
 /* end nav bar */
 
 /* grid layout*/
+body.index{
 
+    grid-template-areas:
+    "header header header"
+  "main main aside"
+  "main main aside"
+  "footer footer footer"
+}
 body{
 display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 0%;
+  background-color: white;
+  grid-template-columns: 50% 20% 1fr;
+}
+body.page2 {
+    grid-template-areas:
+    "header header header"
+  "aside main main"
+    "footer footer footer"
+}
+body.page3 {
+  grid-template:
   "header header header"
-"main main aside"
-"main main aside"
-"footer footer footer"
-
-
-
-
+  "main main section1"
+  "aside aside section2"
+  "footer footer footer"
+}
+body.page4 {
+  grid-template:
+  "header header header"
+  "aside asie main"
+  "footer footer footer"
 }
 header {
   grid-area: header;
 }
 main {
   grid-area:  main;
-  
+  padding: 10px;
+
+
 }
 .main-paragraph {
   padding: 10px;
@@ -64,6 +87,8 @@ main {
 
 aside {
   grid-area: aside;
+  padding: 10px;
+
 }
 
 
@@ -73,20 +98,42 @@ aside {
 
 footer {
 grid-area: footer;
-padding:
-}
-.footer-color {
-  background-color: #ccffff;
 }
 
+section.1 {
+  grid-area: section1;
+}
+
+section.2 {
+  grid-area: section2;
+}
+
+
+.footer-color {
+  background-color: #88dd88;
+}
+.footer-style{
+  border-color: black;
+  border-width: 5px;
+  border-style: double;
+  padding: 10px;
+height: inherit;
+font-size: 20px;
+
+}
 .aside-color {
-  background-color:  #d9d9d9;
+  background-color: #ddb388;
 }
 
 .main-color {
-  background-color: #e6e6e6;
+  background-color: #88ddc1;
 }
- 
+.section1-color {
+  background-color:  #88ddc1;
+}
+.section2-color {
+  background-color: #ddb388;
+}
 
 /* end of grid layout */
 
@@ -109,8 +156,8 @@ img {
 
 }
 img.a {
-  width: 1fr;
-  height: 1fr;
+  width: 30vw;
+  height: 30vh;
   margin: 10px 10px 10px 10px;
   border-radius: 10px;
   border: solid;
@@ -149,15 +196,37 @@ img.c {
 .heading-style {
 border-style: solid;
 border-color: white;
-background-image: linear-gradient(White,grey ,black);
+background-color: palegreen;
+
+text-align: center;
+
+}
+.heading-1{
+  font-size: 45px;
+  padding-top: 250px;
+  width:45vw;
+  height: 45vh;
+}
+
+
+.heading-1:hover {
+background-color: #00bfff;
+border-color: black;
+transition-duration: 3s;
+
+
 
 }
 
 
-
   /* end of headings */
 
+.p-style {
+  text-align: center;
+  font-size: 25px;
 
+
+}
 
 
 
